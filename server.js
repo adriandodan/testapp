@@ -93,7 +93,8 @@ app.delete('/messages/:id', (request, response) => {
             response.status(404).send('resource not found')
         }
     }).catch((err) => {
-        console.log(err)
         response.status(500).send('database error')
     })
+        console.log(err)
 })
+
